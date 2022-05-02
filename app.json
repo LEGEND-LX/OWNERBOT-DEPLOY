@@ -1,5 +1,5 @@
 {
-  "name": "Pro-LegendBot",
+  "name": "Pro-OwnerBot",
   "description": "Tнє Smoothest And Fastest Bot Made By Pro Legend (@Pro_UserBoy). Made with Love And By Python Language With Hardwork... ❤ ",
   "logo": "https://te.legra.ph/file/d17467283e73c884834a5.jpg",
   "keywords": [
@@ -10,9 +10,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/PROBOY-OP/PRO-LEGENDBOT/",
-  "website": "https://github.com/PROBOY-OP/PRO-LEGENDBOT/",
-  "success_url": "https://t.me/Pro_LegendBots",
+  "repository": "https://github.com/LEGEND-LX/OWNERBOT-DEPLOY/",
+  "website": "https://github.com/LEGEND-LX/OWNERBOT-DEPLOY/",
+  "success_url": "https://t.me/LegendHacekr_IIN",
   "env": {
     "ENV": {
       "description": "Set this to ANYTHING will enable heroku.(Don't Need To Change It)",
