@@ -25,7 +25,7 @@ _get_repolink () {
 
 _owner_bot () {
     local zippath
-    zippath="Owner.zip"
+    zippath="master.zip"
     echo "  🔰 Downloading OWNERBOT Source Code... 🔰"
     wget -q $(_get_repolink) -O "$zippath"
     echo "  📍Unpacking Data...📍"
