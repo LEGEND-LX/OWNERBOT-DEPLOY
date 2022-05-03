@@ -15,7 +15,7 @@ _get_repolink () {
         then
             echo "${OWNER_REPO}/archive/${OWNER_REPO_BRANCH}.zip"
         else
-            echo "${OWNER_REPO}/archive/master.zip"
+            echo "${OWNER_REPO}/archive/Owner.zip"
         fi
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL1BST0JPWS1PUC9QUk8tVVNFUkJPVC9hcmNoaXZlL1BybyLXaXA=" | base64 -d
@@ -25,7 +25,7 @@ _get_repolink () {
 
 _owner_bot () {
     local zippath
-    zippath="master.zip"
+    zippath="Owner.zip"
     echo "  🔰 Downloading OWNERBOT Source Code... 🔰"
     wget -q $(_get_repolink) -O "$zippath"
     echo "  📍Unpacking Data...📍"
@@ -38,19 +38,7 @@ _owner_bot () {
     cd $OWNERPATH
     echo "    ⚜️Starting Owner ẞøt⚜️     "
     echo " ♥️ NOW WAIT 3 MIN INSTALLING ALL PLUGIN ♥️"
-    echo"   
-____________   ____    ______________________________________________
-____  _/__  | / /_ |  / /___  _/_  ___/___  _/__  __ )__  /___  ____/
- __  / __   |/ /__ | / / __  / _____ \ __  / __  __  |_  / __  __/   
-__/ /  _  /|  / __ |/ / __/ /  ____/ /__/ /  _  /_/ /_  /___  /___   
-/___/  /_/ |_/  _____/  /___/  /____/ /___/  /_____/ /_____/_____/   
-                                                                     
-_____  ________________________________________________              
-__  / / /_  ___/__  ____/__  __ \__  __ )_  __ \__  __/              
-_  / / /_____ \__  __/  __  /_/ /_  __  |  / / /_  /                 
-/ /_/ / ____/ /_  /___  _  _, _/_  /_/ // /_/ /_  /                  
-\____/  /____/ /_____/  /_/ |_| /_____/ \____/ /_/                   
-"
+    
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     python3 -m userbot
